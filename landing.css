@@ -1,19 +1,29 @@
+:root {
+  --primary-color: #ff8a00;
+  --secondary-color: #333;
+  --background-color: #ffffff;
+  --background-color-2: #f7f7f7;
+  --text-color: #333;
+  --text-color-2: #fff;
+}
 @font-face {
-  font-family: Gilroy Bold;
+  font-family: Gilroy;
   src: url("./font/gilroy/Gilroy-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
-  font-family: Gilroy regular;
+  font-family: Gilroy;
   src: url("./font/gilroy/Gilroy-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
-  font-family: Gilroy Medium;
+  font-family: Gilroy;
   src: url("./font/gilroy/Gilroy-Medium.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -24,24 +34,23 @@
 }
 
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--background-color);
+  font-family: Gilroy, sans-serif;
 }
 
-.container {
+/* .container {
   width: 1440px;
   max-width: 1200px;
   margin: 0 auto;
  
-}
+} */
 
 /* ------------------------------------Header Styles-------------------------- */
 header {
   position: absolute;
   width: 100%;
   top: 0;
-  left: 0;
-  padding: 40px 0;
+  padding: 0px 0;
   z-index: 100;
 }
 
@@ -49,12 +58,13 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  pading: 0 40px;
+  padding: 0 30px;
 }
 
 .logo {
   font-size: 28px;
-  font-weight: 400;
+  family: Gilroy;
+  font-weight: 600;
   color: #fff;
 }
 nav {
@@ -79,15 +89,14 @@ nav ul li {
 }
 
 nav ul li a {
-  font-family: Gilroy Medium, sans-serif;
-  color: #fff;
+  color: var(--text-color-2);
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ff8a00;
+  color: var(--primary-color);
 }
 
 .dropdown i {
@@ -100,7 +109,7 @@ nav ul li a:hover {
 }
 
 .cart a {
-  color: #fff;
+  color: var(--text-color-2);
   font-size: 20px;
 }
 
@@ -108,8 +117,8 @@ nav ul li a:hover {
   position: absolute;
   top: -8px;
   right: -8px;
-  background-color: #ff8a00;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color-2);
   font-size: 12px;
   width: 18px;
   height: 18px;
@@ -126,6 +135,9 @@ nav ul li a:hover {
   width: 100%;
   /* background-image: linear-gradient(rgba(255, 255, 255, 0)10% ), url("./home.jpg"); */
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("./font/img/home.jpg");
+  width: 1440px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./font/img/home.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode:overlay;
@@ -134,47 +146,51 @@ nav ul li a:hover {
   justify-content: center;
   text-align: center;
   position: relative;
-  
 }
 
 .hero-content {
-  
-  font-weight: 400;
+  font-weight: 600;
   padding: 0 20px;
   position: relative;
   z-index: 3;
-  font-family: Gilroy Bold, sans-serif;
+
   margin-top: -300px;
 }
 
 .hero h1 {
+
   font-size: 80px;
-  color: #fff;
+  color: var(--text-color-2);
   font-weight: 400;
   margin-bottom: 16px;
   white-space: nowrap
   line-height: 1.3;
   text-align: center;
   text-transform: capitalize; /* "Title case" - chữ cái đầu viết hoa */
+  max-width: 1000px;
 }
 
-.hero p {
+.hero-content p {
   font-size: 24px;
- 
   color: #ddd;
   margin-bottom: 30px;
   text-align: center;
-  font-family: Gilroy Regular, sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 20px auto 40px;
+  max-width: 700px;
 }
-
 /*------------------- search --------------------*/
 .search-container {
   display: flex;
   max-width: 344px;
   margin: 0 auto 30px;
   border-radius: 30px;
+  border: 0.86px solid rgba(255, 255, 255, 0.6);
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .search-container input {
@@ -183,7 +199,7 @@ nav ul li a:hover {
   border: none;
   outline: none;
   font-size: 16px;
-  font-family: Gilroy regular, sans-serif;
+  font-weight: 400;
   background: transparent;
   color: #fff;
 }
@@ -192,8 +208,7 @@ nav ul li a:hover {
   color: #ccc;
 }
 .search-container button {
-  background-color: rgba(229, 132, 17, 1);
-
+  background-color: var(--primary-color);
   border: none;
   border-radius: 24px;
   width: 40px;
@@ -207,17 +222,6 @@ nav ul li a:hover {
   padding: 15px 20px;
   cursor: pointer;
 }
-
-/* 
-.hotspot {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
-  animation: pulse 2s infinite;
-} */
 
 @keyframes pulse {
   0% {
@@ -247,7 +251,7 @@ nav ul li a:hover {
 /* Features Section */
 .features {
   padding: 80px 0;
-  background-color: #fff;
+  background-color: var(--background-color-2);
   height: auto;
 }
 
@@ -255,51 +259,40 @@ nav ul li a:hover {
   margin-bottom: 50px;
 }
 
-.feature-cardd {
-  font-size: 52px; /* Increased font size */
-  color: #333;
-  text-align: left; /* Changed to left alignment */
-  margin-bottom: 90px;
-  line-height: 1.2;
-  font-family: Gilroy Bold, sans-serif;
-}
-
 .feature-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .feature-card {
   padding: 30px;
   border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: left; /* Changed to left alignment */
+  transition: transform 0.4s, box-shadow 0.4s;
+  text-align: left;
 }
 
 .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
 .feature-card h3 {
-  font-family: Gilroy Bold, sans-serif;
+  font-weight: 600;
   font-size: 24px;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--text-color);
   text-align: left; /* Changed to left alignment */
 }
 
 .feature-card p {
-  color: #666;
   margin-bottom: 20px;
+  color: var(--text-color);
+  font-weight: 400;
   line-height: 1.6;
   text-align: left; /* Changed to left alignment */
 }
-
 .more-info {
-  color: #E58411;
-  font-family: Gilroy Medium, sans-serif;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 400;
   display: flex;
@@ -327,7 +320,6 @@ nav ul li a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 768px) {
   .feature-cards {
     grid-template-columns: 1fr;
@@ -341,21 +333,13 @@ nav ul li a:hover {
     display: none;
   }
 }
-
-
 .container2 {
-  width: 1480px;
+  width: 1500px;
   max-width: 100%;
-  margin: 30px auto;
-  background: rgba(247, 247, 247, 1);
-
-
-  ;
+  background: var(--background-color-2);
 }
 /* -----------fitter-------------- */
-
 .text-ct2 {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,22 +347,19 @@ nav ul li a:hover {
   padding: 30px 40px;  ;
   max-width: 1200px;
   font-size: 36px;
-  color: #333;
+  color: var(--text-color);
   text-align: center; 
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 1px;
-  font-family: Gilroy Bold, sans-serif;
 }
 .products {
   height: 492px ;
-  width: 1198.35px
 }
 .product-carousel button i {
   font-size: 18px;
-  color: #fff;
+  color: var(--text-color-2);
   item-width: 20px;
-  
   justify-content: center;
   display: flex;
   transition: color 0.3s;
@@ -391,20 +372,17 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  color: #333;
+  color: var(--text-color);
 }
 .filter-tabs {
   align-items: center;
   justify-content: center;
   text-align: center; 
-  background-color: #f5f5f5; */
-  padding: 10px 20px
+  background-color: #f5f5f5;
+  padding: 10px 20px;
   border-radius: 50px;
   max-width: 400px;
   margin: 20px auto;
-
-
-
 }
 
 .filter-btn {
@@ -419,16 +397,15 @@ nav ul li a:hover {
 }
 
 .filter-btn.active {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--secondary-color);
+  color: var(--text-color-2); ;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 .filter-btn:hover:not(.active) {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Product carousel */
+/*--------------- Product carousel ++++++++++++++*/
 .product-carousel {
   display: flex;
   align-items: center;
@@ -441,8 +418,8 @@ nav ul li a:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #fff;
-  border: 1px solid #eee;
+  background-color: var(--text-color-2);
+  border: 1px solid var(--text-color-2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -456,14 +433,14 @@ nav ul li a:hover {
   gap: 40px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
   padding: 10px 5px;
   flex: 1;
 }
 
 .products::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
 }
 
 /* Product card */
@@ -473,7 +450,7 @@ nav ul li a:hover {
   gap: 90px;
   padding: 16px
   min-width: 268.09 px;
-  background-color: #fff;
+  background-color: var(--background-color);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
@@ -524,7 +501,7 @@ nav ul li a:hover {
 .rating {
   display: flex;
   margin-bottom: 15px;
-  color: #FFB800;
+  color: var(--primary-color);
 }
 
 .price-cart {
@@ -536,10 +513,8 @@ margin-top: 60px;
 }
 
 .price {
- 
   font-size: 21.3px;
   font-weight: 700;
-
 }
 
 .add-to-cart {
@@ -567,7 +542,7 @@ margin-top: 60px;
 }
 
 .view-all a {
-  color: #FF8A00;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
   display: inline-flex;
@@ -576,7 +551,7 @@ margin-top: 60px;
 }
 
 .view-all a:hover {
-  color: #e67a00;
+  color: var(--primary-color);  
 }
 
 .view-all .material-symbols-outlined {
@@ -594,29 +569,7 @@ margin-top: 60px;
   .product-card {
       flex: 0 0 calc(50% - 15px);
   }
-  
-  .filter-tabs {
-    display: flex;
-    background-color: #f3f3f3; /* màu nền light gray */
-    border-radius: 50px;     /* bo tròn lớn để ra hình dạng pill */
-    padding: 10px;
-    gap: 10px;
-    width: fit-content;
-    margin: 20px auto;  
-  }
-  
-  .filter-btn {
-    width: 84px;
-    height: 45px;
-    border-radius: 32px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-family: 'Gilroy', sans-serif;
-    font-size: 16px;
-    color: #333;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+
   .filter-tabs {
     display: flex;
     background-color: #f3f3f3; /* màu nền light gray */
