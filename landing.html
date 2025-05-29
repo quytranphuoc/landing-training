@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panto - Modern Furniture</title>
-    <link rel="stylesheet" href="index.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="landing.css" />
   </head>
   <body>
-      <header class="desktop-header">
+    <!-- Desktop Header -->
+    <header class="desktop-header">
       <div class="container">
         <div class="logo">Panto</div>
         <nav>
@@ -62,207 +62,114 @@
         </div>
       </div>
     </div>
+
+    <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>
-          Make Your Interior More   
-          Minimalistic & Modern
-        </h1>
+        <h1>Make Your Interior More Minimalistic & Modern</h1>
         <p>
           Turn your room with panto into a lot more minimalist and modern with
           ease and speed
         </p>
-       <div class="search-container">
-         <div class="search-container-line">
-          <input type="text" placeholder="Search furniture" />
-          <button type="submit">
-            <img src="./img/Search.svg" class="img-search" alt="Search icon" />
-          </button>
+        <div class="search-container">
+          <div class="search-container-line">
+            <input type="text" placeholder="Search furniture" />
+            <button type="submit">
+              <img
+                src="./img/Search.svg"
+                class="img-search"
+                alt="Search icon"
+              />
+            </button>
+          </div>
         </div>
-       </div>
+
+        <!-- Color Selector -->
         <div class="hotspot-container1">
           <div class="color-selector">
-            <img
-              src="./img/Border.svg"
-              alt=""
-              style="
-                width: 112px;
-                height: 56px;
-                object-fit: contain;
-                display: block;
-              "
-            />
+            <img src="./img/Border.svg" alt="" />
           </div>
         </div>
         <div class="color-selector-item">
-          <span class="color-dot orange active"
-            ><img src="./img/Tit.svg" alt="" class="img-tit"
-          /></span>
+          <span class="color-dot orange active">
+            <img src="./img/Tit.svg" alt="" class="img-tit" />
+          </span>
           <span class="color-dot teal active"></span>
           <span class="color-dot gray active"></span>
         </div>
 
+        <!-- Hotspots -->
         <div class="hotspots">
-
-        <div class="hotspots-container">
-              <div class="hotspots">
-
-          <!-- <span class="hotspot" style="top: 390%; left: 60%"></span>
-            <span class="hotspot" style="top: 250%; left: -2%; width: 40px; height: 40px; display: inline-block;"></span>
-            <span class="hotspot" style="top: 310%; left: -20%"></span>
-            <span class="hotspot" style="top: 400%; right: -15%"></span> -->
-          <button class="hotspot-btn">
-            <span class="hotspot" style="top: 460%; left: -166px"></span>
-            <span
-              class="hotspot-outer"
-              style="
-                position: absolute;
-                top: 370%;
-                left: -187px;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                border: 1px solid var(--white-border-06);
-                box-sizing: border-box;
-                pointer-events: none;
-                z-index: 1;
-              "
-            ></span>
-          </button>
-          <button class="hotspot-btn">
-            <span
-              class="hotspot-big"
-              style="
-                top: 180%;
-                left: 0.7%;
-
-                width: 18px;
-                height: 18px;
-                border: 10px;
-              "
-            ></span>
-            <span
-              class="hotspot-outer"
-              style="
-                position: absolute;
-                top: 50%;
-                left: -3%;
-                width: 62px;
-                height: 62px;
-                border-radius: 50%;
-                border: 1px solid var(--white-border-06);
-                box-sizing: border-box;
-                pointer-events: none;
-                z-index: 1;
-              "
-            ></span>
-          </button>
-          <button class="hotspot-btn">
-            <span class="hotspot" style="top: 602%; right: 38.4%; z-index:100;" ></span>
-            <span
-              class="hotspot-outer"
-              style="
-                position: absolute;
-                top: 515%;
-                right: 36%;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                border: 1px solid var(--white-border-06);
-                box-sizing: border-box;
-                pointer-events: none;
-                z-index: 1;
-              "
-            ></span>
-          </button>
-          <button class="hotspot-btn">
-            <span class="hotspot" style="top: 743.55%; right: -26.6%"></span>
-            <span
-              class="hotspot-outer"
-              style="
-                position: absolute;
-                top: 660%;
-                right: -28.95%;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                border: 1px solid var(--white-border-06);
-                box-sizing: border-box;
-                pointer-events: none;
-                z-index: 1;
-              "
-            ></span>
-          </button>
-        </div>
-
-
-          <!-- <div class="hotspots">
-            <button class="hotspot-btn" style="top: 150%; left: -400%; ">
-              <span class="hotspot" style="top: 100%;";"></span>
-              <span class="hotspot-outer"></span>
-            </button>
-            <button class="hotspot-btn">
-              <span class="hotspot-big"></span>
-              <span class="hotspot-outer"></span>
-            </button>
-            <button class="hotspot-btn">
+          <div class="hotspots-container">
+            <button class="hotspot-btn hotspot-1">
               <span class="hotspot"></span>
               <span class="hotspot-outer"></span>
             </button>
-            <button class="hotspot-btn">
+            <button class="hotspot-btn hotspot-2">
+              <span class="hotspot-big"></span>
+              <span class="hotspot-outer hotspot-outer-big"></span>
+            </button>
+            <button class="hotspot-btn hotspot-3">
+              <span class="hotspot"></span>
+              <span class="hotspot-outer"></span>
+            </button>
+            <button class="hotspot-btn hotspot-4">
               <span class="hotspot"></span>
               <span class="hotspot-outer"></span>
             </button>
           </div>
-        </div> -->
-        
-
+        </div>
       </div>
     </section>
+
+    <!-- Features Section -->
     <section class="features">
-      <div class="container1">
+      <div class="container">
         <div class="feature-cards">
           <div class="feature-cards-title">
             <h2>Why <br />Choosing Us</h2>
           </div>
-       <div class="feature-cards-content">
-           <div class="feature-card">
-            <h3>Luxury facilities</h3>
-            <p>
-              The advantage of hiring a workspace with us is that givees you
-              comfortable service and all-around facilities.
-            </p>
-            <a href="#" class="more-info"
-              >More Info <img src="./img/Arrow.svg" alt=""
-            /></a>
+          <div class="feature-cards-content">
+            <div class="feature-card">
+              <h3>Luxury facilities</h3>
+              <p>
+                The advantage of hiring a workspace with us is that givees you
+                comfortable service and all-around facilities.
+              </p>
+              <a href="#" class="more-info">
+                More Info <img src="./img/Arrow.svg" alt="" />
+              </a>
+            </div>
+            <div class="feature-card">
+              <h3>Affordable Price</h3>
+              <p>
+                You can get a workspace of the highst quality at an affordable
+                price and still enjoy the facilities that are oly here.
+              </p>
+              <a href="#" class="more-info">
+                More Info <img src="./img/Arrow.svg" alt="" />
+              </a>
+            </div>
+            <div class="feature-card">
+              <h3>Many Choices</h3>
+              <p>
+                We provide many unique work space choices so that you can choose
+                the workspace to your liking.
+              </p>
+              <a href="#" class="more-info">
+                More Info <img src="./img/Arrow.svg" alt="" />
+              </a>
+            </div>
           </div>
-          <div class="feature-card">
-            <h3>Affordable Price</h3>
-            <p>
-              You can get a workspace of the highst quality at an affordable
-              price and still enjoy the facilities that are oly here.
-            </p>
-            <a href="#" class="more-info"
-              >More Info <img src="./img/Arrow.svg" alt=""
-            /></a>
-          </div>
-          <div class="feature-card">
-            <h3>Many Choices</h3>
-            <p>
-              We provide many unique work space choices so that you can choose
-              the workspace to your liking.
-            </p>
-            <a href="#" class="more-info"
-              >More Info <img src="./img/Arrow.svg" alt=""
-            /></a>
-          </div>
-       </div>
         </div>
       </div>
     </section>
-     <div class="container2">
-      <div class="text-container"
-      ><h1 class="text-ct2">Best Selling Product</h1></div>
+
+    <!-- Products Section -->
+    <div class="container2">
+      <div class="text-container">
+        <h1 class="text-ct2">Best Selling Product</h1>
+      </div>
 
       <div class="filter-tabs">
         <button class="filter-btn active">Chair</button>
@@ -270,6 +177,7 @@
         <button class="filter-btn">Sofa</button>
         <button class="filter-btn">Lamp</button>
       </div>
+
       <div class="product-carousel-container">
         <div class="products">
           <div class="product-card">
@@ -278,7 +186,6 @@
                 src="./img/Char1.svg"
                 alt="Sakarias Armchair"
                 class="chair-img"
-                style="width: 217.89599609375px; height: 255.9010467529297px"
               />
             </div>
             <div class="product-info">
@@ -295,9 +202,9 @@
                 <span class="star"><img src="./img/Star.svg" alt="" /></span>
               </div>
               <div class="price-cart">
-                <span style="display: flex" class="price"
-                  ><img class="img-pc" src="./img/$.svg" alt="" />392</span
-                >
+                <span style="display: flex" class="price">
+                  <img class="img-pc" src="./img/$.svg" alt="" />392
+                </span>
                 <button class="add-to-cart">
                   <img src="./img/Plus.svg" alt="" />
                 </button>
@@ -324,9 +231,9 @@
                 <span class="star"><img src="./img/Star.svg" alt="" /></span>
               </div>
               <div class="price-cart">
-                <span style="display: flex" class="price"
-                  ><img class="img-pc" src="./img/$.svg" alt="" />299</span
-                >
+                <span style="display: flex" class="price">
+                  <img class="img-pc" src="./img/$.svg" alt="" />299
+                </span>
                 <button class="add-to-cart">
                   <img src="./img/Plus.svg" alt="" />
                 </button>
@@ -349,8 +256,8 @@
                 <span class="star"><img src="./img/Star.svg" alt="" /></span>
               </div>
               <div class="price-cart">
-                <span style="display: flex" class="price"
-                  ><img class="img-pc" src="./img/$.svg" alt="" />519
+                <span style="display: flex" class="price">
+                  <img class="img-pc" src="./img/$.svg" alt="" />519
                 </span>
                 <button class="add-to-cart">
                   <img src="./img/Plus.svg" alt="" />
@@ -381,9 +288,9 @@
                 <span class="star"><img src="./img/Star.svg" alt="" /></span>
               </div>
               <div class="price-cart">
-                <span style="display: flex" class="price"
-                  ><img class="img-pc" src="./img/$.svg" alt="" />921</span
-                >
+                <span style="display: flex" class="price">
+                  <img class="img-pc" src="./img/$.svg" alt="" />921
+                </span>
                 <button class="add-to-cart">
                   <img src="./img/Plus.svg" alt="" />
                 </button>
@@ -392,27 +299,44 @@
           </div>
         </div>
       </div>
+
       <div class="view-all">
-        <a href="#" class="more-info-all"
-          >View All <img src="./img/Arrow.svg" alt=""
-        /></a>
+        <a href="#" class="more-info">
+          View All <img src="./img/Arrow.svg" alt="" />
+        </a>
       </div>
     </div>
 
+    <script>
+      const openBtn = document.getElementById("menu-bars");
+      const closeBtn = document.getElementById("close-menu-btn");
+      const menu = document.getElementById("offcanvas-menu");
+
+      openBtn.onclick = () => {
+        menu.style.display = "block";
+        document.body.style.overflow = "hidden";
+      };
+
+      closeBtn.onclick = () => {
+        menu.style.display = "none";
+        document.body.style.overflow = "auto";
+      };
+
+      menu.onclick = (e) => {
+        if (e.target === menu) {
+          menu.style.display = "none";
+          document.body.style.overflow = "auto";
+        }
+      };
+
+      // Filter functionality
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>
-
-<script>
-  const openBtn = document.getElementById("menu-bars");
-  const closeBtn = document.getElementById("close-menu-btn");
-  const menu = document.getElementById("offcanvas-menu");
-  openBtn.onclick = () => {
-    menu.style.display = "block";
-  };
-  closeBtn.onclick = () => {
-    menu.style.display = "none";
-  };
-  menu.onclick = (e) => {
-    if (e.target === menu) menu.style.display = "none";
-  };
-</script>
