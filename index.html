@@ -73,11 +73,13 @@
           ease and speed
         </p>
        <div class="search-container">
-         <div class="search-container-line">
-          <input type="text" placeholder="Search furniture" />
+        <div class="search-container-blur"></div>
+        <div class="search-container-line">
+           <input type="text" placeholder="Search furniture"/>
           <button type="submit">
             <img src="./img/Search.svg" class="img-search" alt="Search icon" />
           </button>
+     
         </div>
        </div>
         <div class="hotspot-container1">
@@ -112,17 +114,18 @@
             <span class="hotspot" style="top: 310%; left: -20%"></span>
             <span class="hotspot" style="top: 400%; right: -15%"></span> -->
           <button class="hotspot-btn">
-            <span class="hotspot" style="top: 460%; left: -166px"></span>
+            <span class="hotspot" style="top: 716%; left: -177px"></span>
             <span
               class="hotspot-outer"
               style="
                 position: absolute;
-                top: 370%;
-                left: -187px;
+                top: 630%;
+                left: -198px;
                 width: 32px;
                 height: 32px;
                 border-radius: 50%;
                 border: 1px solid var(--white-border-06);
+                backdrop-filter: blur(8px);
                 box-sizing: border-box;
                 pointer-events: none;
                 z-index: 1;
@@ -133,66 +136,69 @@
             <span
               class="hotspot-big"
               style="
-                top: 180%;
+                top: 430%;
                 left: 0.7%;
-
                 width: 18px;
                 height: 18px;
                 border: 10px;
+                z-index:2;
               "
             ></span>
             <span
               class="hotspot-outer"
               style="
                 position: absolute;
-                top: 50%;
-                left: -3%;
-                width: 62px;
-                height: 62px;
+                top: 310%;
+                left: -2.7%;
+                width: 56px;
+                height: 56px;
                 border-radius: 50%;
                 border: 1px solid var(--white-border-06);
+                backdrop-filter: blur(8px);
                 box-sizing: border-box;
                 pointer-events: none;
                 z-index: 1;
               "
             ></span>
           </button>
-          <button class="hotspot-btn">
-            <span class="hotspot" style="top: 602%; right: 38.4%; z-index:100;" ></span>
+            <button class="hotspot-btn">
+            <span class="hotspot" style="top: 850%; right: 38.4%; z-index:100;" ></span>
             <span
               class="hotspot-outer"
               style="
-                position: absolute;
-                top: 515%;
-                right: 36%;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                border: 1px solid var(--white-border-06);
-                box-sizing: border-box;
-                pointer-events: none;
-                z-index: 1;
+              position: absolute;
+              top: 764%;
+              right: 35.9%;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              border: 1px solid var(--white-border-06);
+              backdrop-filter: blur(8px);
+              box-sizing: border-box;
+              pointer-events: none;
+              z-index: 1;
               "
             ></span>
-          </button>
-          <button class="hotspot-btn">
-            <span class="hotspot" style="top: 743.55%; right: -26.6%"></span>
+            </button>
+            <button class="hotspot-btn">
+            <span class="hotspot backdrop-blur-[8px]" style="top: 944%; right: -26.6%"></span>
             <span
               class="hotspot-outer"
               style="
-                position: absolute;
-                top: 660%;
-                right: -28.95%;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                border: 1px solid var(--white-border-06);
-                box-sizing: border-box;
-                pointer-events: none;
-                z-index: 1;
+              position: absolute;
+              top: 860%;
+              right: -28.95%;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              border: 1px solid var(--white-border-06);
+              backdrop-filter: blur(8px);
+              box-sizing: border-box;
+              pointer-events: none;
+              z-index: 1;
               "
             ></span>
-          </button>
+            </button>
         </div>
 
 
@@ -232,9 +238,12 @@
               The advantage of hiring a workspace with us is that givees you
               comfortable service and all-around facilities.
             </p>
-            <a href="#" class="more-info"
-              >More Info <img src="./img/Arrow.svg" alt=""
-            /></a>
+            <div class="more-info-container">
+              <a href="#" class="more-info"
+              >More Info </a>
+              <img src="./img/Arrow.svg" alt=""
+            />
+            </div>
           </div>
           <div class="feature-card">
             <h3>Affordable Price</h3>
@@ -242,9 +251,12 @@
               You can get a workspace of the highst quality at an affordable
               price and still enjoy the facilities that are oly here.
             </p>
-            <a href="#" class="more-info"
-              >More Info <img src="./img/Arrow.svg" alt=""
-            /></a>
+            <div class="more-info-container">
+              <a href="#" class="more-info"
+              >More Info </a>
+          <img src="./img/Arrow.svg" alt=""
+            />
+            </div>
           </div>
           <div class="feature-card">
             <h3>Many Choices</h3>
@@ -252,9 +264,12 @@
               We provide many unique work space choices so that you can choose
               the workspace to your liking.
             </p>
-            <a href="#" class="more-info"
-              >More Info <img src="./img/Arrow.svg" alt=""
-            /></a>
+            <div class="more-info-container" >
+              <a href="#" class="more-info"
+              >More Info </a>
+            <img src="./img/Arrow.svg" alt=""
+            />
+            </div>
           </div>
        </div>
         </div>
@@ -299,7 +314,7 @@
                   ><img class="img-pc" src="./img/$.svg" alt="" />392</span
                 >
                 <button class="add-to-cart">
-                  <img src="./img/Plus.svg" alt="" />
+                  <img class="img-plus" src="./img/Plus.svg" alt=""  style="size: 24.37px;"/>
                 </button>
               </div>
             </div>
@@ -328,7 +343,7 @@
                   ><img class="img-pc" src="./img/$.svg" alt="" />299</span
                 >
                 <button class="add-to-cart">
-                  <img src="./img/Plus.svg" alt="" />
+                  <img class="img-plus" src="./img/Plus.svg" alt=""/>
                 </button>
               </div>
             </div>
@@ -353,7 +368,7 @@
                   ><img class="img-pc" src="./img/$.svg" alt="" />519
                 </span>
                 <button class="add-to-cart">
-                  <img src="./img/Plus.svg" alt="" />
+                  <img class="img-plus" src="./img/Plus.svg" alt="" />
                 </button>
               </div>
             </div>
@@ -362,7 +377,7 @@
           <div class="product-card">
             <div class="product-image">
               <img
-                src="./img/char4.svg"
+                src="./img/Char4.svg"
                 alt="Nyantuy Chair"
                 class="chair-img"
               />
@@ -385,7 +400,7 @@
                   ><img class="img-pc" src="./img/$.svg" alt="" />921</span
                 >
                 <button class="add-to-cart">
-                  <img src="./img/Plus.svg" alt="" />
+                  <img class="img-plus" src="./img/Plus.svg" alt="" />
                 </button>
               </div>
             </div>
@@ -394,9 +409,45 @@
       </div>
       <div class="view-all">
         <a href="#" class="more-info-all"
-          >View All <img src="./img/Arrow.svg" alt=""
-        /></a>
+          >View All </a>
+          <img class="more-info-all-all" src="./img/Arrow.svg" alt=""
+        />
       </div>
+    </div>
+
+    <div class="container3">
+      <section class="experiences-section">
+        <div class="image-container">
+          <div class="border-overlay"></div>
+          <div class="border-overlay2"></div>
+          <div class="border-overlay3"></div>
+          <img
+            src="./img/Experience.jpg"
+            alt="Modern interior with a stylish sofa"
+            class="interior-image"
+          />  
+        </div>
+
+        <div class="content-container">
+          <span class="section-label">EXPERIENCES</span>
+
+          <h2 class="section-title">We Provide You The <br/> Best Experience</h2>
+
+          <p class="section-description">
+            You don't have to worry about the result because all of these
+            interiors are made by people who are professionals in their fields
+            with an elegant and luxurious style and with premium quality
+            materials
+          </p>
+
+            <div class="more-info-container">
+              <a href="#" class="more-info"
+              >More Info </a>
+          <img src="./img/Arrow.svg" alt=""
+            />
+            </div>
+        </div>
+      </section>
     </div>
 
   </body>
