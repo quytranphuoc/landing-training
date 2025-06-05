@@ -14,6 +14,7 @@
   --white-border-06: rgba(255, 255, 255, 0.6);
   --white-border-47: rgba(247, 247, 247, 1);
   --white-border-50: rgba(250, 250, 250, 1);
+  --white-border-84: rgba(255, 255, 255, 0.84);
   --pale-border-1: rgba(238, 238, 238, 1);
   --text-light-gray: #f5f5f5;
   --text-inter: rgba(141, 141, 141, 1);
@@ -2072,7 +2073,7 @@ body {
   width: 100%;
   max-width: 555px;
   height: 423px;
-  top: 200px;
+  top: 180px;
   right: -100px;
   left: auto;
   margin-left: 0;
@@ -2281,3 +2282,334 @@ body {
     grid-template-rows: 180px 180px 250px;
   }
 } */
+
+/* -------------------Testimonials---------------- */
+
+.container5 {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  text-align: center;
+  margin-top: 153px;
+  overflow: auto;
+}
+
+.section-label {
+  display: inline-block;
+  color: var(--orange-primary);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 17.5%;
+  margin-bottom: 20px;
+}
+
+.section-title-tes {
+  font-size: 42px;
+  line-height: 100%;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 413px;
+  height: 52px;
+  color: var(--dark-gray-01);
+  margin-bottom: 40px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* Testimonials Carousel */
+.testimonials-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Relative positioning for absolute children */
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.testimonials-container {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 127px;
+  padding-bottom: 200px;
+  gap: 39px;
+  transition: transform 0.5s ease;
+}
+
+/* Navigation Buttons */
+.nav-btn-prev {
+  position: absolute;
+  top: 168px;
+  margin-left: 52px;
+  transform: translateY(-50%);
+  background-color: var(--white-bg);
+  border: none;
+  border-radius: 26.09px;
+  padding: 11.96px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  filter: drop-shadow(0 7.03px 19.53px rgba(0, 0, 0, 0.06));
+  z-index: 10; /* Above the testimonial cards */
+}
+
+.nav-btn-next-btn {
+  position: absolute;
+  top: 168px;
+  right: 85px;
+  transform: translateY(-50%);
+  background-color: var(--white-bg);
+  border: none;
+  border-radius: 26.09px;
+  padding: 11.96px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  filter: drop-shadow(0 7.03px 19.53px rgba(0, 0, 0, 0.06));
+  z-index: 10; 
+}
+
+.nav-btn-prev {
+  left: 50px; 
+}
+
+.next-btn {
+  right: 50px; 
+}
+
+/* .nav-btn-prev span.material-symbols-outlined img,
+.next-btn span.material-symbols-outlined img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
+/* Testimonial Card */
+.testimonial-card {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 370px;
+  border-radius: 16px;
+  height: 400px;
+  position: relative; /* Ensure internal elements are positioned correctly */
+}
+
+.testimonial-bg {
+  position: absolute;
+  width: 370px;
+  height: 500px;
+  z-index: 2;
+  border-radius: 50px;
+}
+
+.testimonial-bg-img {
+  width: 370px;
+  height: 476px;
+  object-fit: cover;
+  border-radius: 18.12px;
+  z-index: 5;
+}
+
+.testimonial-bg-img-blur {
+  position: absolute;
+  top: 120px;
+  left: 35px;
+  width: 300px;
+  height: 380px;
+  filter: blur(32px);
+  border-radius: 18.12px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.testimonial-content {
+  position: absolute;
+  background-image: url(./img/Union2.svg);
+  margin-left: 18px;
+  margin-top: 219px;
+  width: 334px;
+  height: 239px;
+  padding: 25px;
+  border-radius: 16px;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Client Info */
+.client-avatar {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  margin: 40px auto;
+  background-color: var(--white-border-84);
+  position: relative;
+  z-index: 3;
+}
+
+.avatar-img-blur {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  filter: blur(11px);
+  z-index: 1;
+  background-color: var(--white-border-84);
+}
+
+.avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: -57px auto 15px;
+  background-color: var(--white-border-84);
+  position: relative;
+  z-index: 5;
+}
+
+.client-name {
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  height: 22px;
+  margin-top: -43px;
+  margin-bottom: 6px;
+  color: var(--dark-gray-01);
+}
+
+.client-title {
+  font-size: 12px;
+  color: var(--dark-gray-01);
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--dark-gray-01);
+  font-weight: 400;
+  width: 100%;
+  max-width: 252px;
+  height: 51px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+/* Rating */
+.rating-tes {
+  display: flex;
+  margin: 0 auto;
+  width: 90px;
+  height: 14px;
+  justify-content: center;
+  gap: 5px;
+}
+
+.star {
+  font-size: 20px;
+}
+
+.star.filled {
+  width: 11.67px;
+  height: 11.67px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 30px;
+  }
+
+  .testimonial-card {
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container5 {
+    padding: 30px 15px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .testimonial-card {
+    height: 350px;
+  }
+
+  .testimonial-content {
+    padding: 20px 15px;
+  }
+
+  .client-avatar {
+    width: 60px;
+    height: 60px;
+    margin-top: -50px;
+  }
+
+  .nav-btn-prev {
+    left: 10px;
+  }
+
+  .next-btn {
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .testimonial-card {
+    height: 320px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+  }
+
+  .client-name {
+    font-size: 16px;
+  }
+
+  .client-title {
+    font-size: 12px;
+  }
+
+  .client-avatar {
+    width: 50px;
+    height: 50px;
+    margin-top: -40px;
+  }
+
+  .nav-btn-prev {
+    left: 5px;
+  }
+
+  .next-btn {
+    right: 5px;
+  }
+}
