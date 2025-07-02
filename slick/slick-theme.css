@@ -132,6 +132,7 @@
     list-style: none;
 
     text-align: center;
+    justify-self: anchor-center;
     }
     .slick-dots li
 {
