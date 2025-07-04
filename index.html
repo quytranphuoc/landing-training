@@ -4,131 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panto - Modern Furniture</title>
-    <link rel="stylesheet" href="index.css" />
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+       <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
   </head>
   <body>
-    <header>
+    
+       <header class="desktop-header">
       <div class="container">
-        <div class="logo">Panto</div>
+        <div class="logo" style="line-height: 100%;">Panto</div>
         <nav>
           <ul>
-            <li class="dropdown">
-              <a href="#" style="display: flex"
-                >Furniture <img src="./img/Line.svg" alt=""
-              /></a>
-            </li>
+            <li class="dropdown" style="margin-right: 3px;">
+              <a href="#" style="display: flex">
+                Furniture 
+              </a>
+              <img src="./img/Line.svg" alt="" class="img-nav" style="height: 18px; width: 18px;"/>
+            </li>   
             <li><a href="#">Shop</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <!-- ------------------menu------------- -->
         <div class="cart">
           <a href="#"><img src="./img/Bag.svg" alt="" /></a>
-
           <div class="cart-count">
             <img class="cart-count-img" src="./img/0.svg" alt="" />
           </div>
         </div>
       </div>
-
-      <header2>
-        <div class="menu-container">
-          <button id="menu-bars" class="md:hidden">
-            <img
-              src="./img/Menu.svg"
-              alt="Menu"
-              style="height: 30px; width: 30px"
-            />
-          </button>
-          <div class="logo2">Panda</div>
-        </div>
-      </header2>
-
-      <div
-        id="offcanvas-menu"
-        style="
-          display: none;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          height: 100vh;
-          background: rgba(0, 0, 0, 0.5);
-          z-index: 1000;
-        "
-      >
-        <div class="layout-menu">
-          <button
-            id="close-menu-btn"
-            style="
-              position: absolute;
-              top: 16px;
-              right: 16px;
-              font-size: 24px;
-              background: none;
-              border: none;
-              cursor: pointer;
-            "
-          >
-            x
-          </button>
-          <div class="menu-body" style="padding: 16px">
-            <ul style="list-style: none; padding: 0">
-              <li style="margin-bottom: 16px">
-                <a href="#"
-                  >Furniture
-                  <img
-                    style="background-color: black; display: flex"
-                    src="./img/Line.svg"
-                    alt=""
-                /></a>
-              </li>
-              <li style="margin-bottom: 16px"><a href="#">Shop</a></li>
-              <li style="margin-bottom: 16px"><a href="#">About Us</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class ="menu-container">
-        <div class="menu-header">
-        <div menu-header-logo>
-         <button><span class="hotspot"></span> </button>
-            <div class="title-logo" style="justify-content: center; align-self: center;">Panda</div>
-          </div>
-      </div>
-  
-        <menu class="menu">
-          <div class="menu-icon">
-         
-            <div class="menu-content">
-            <div class="menu-header">
-      
-      </div> -->
     </header>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <div class="menu-container">
+        <button id="menu-bars">
+          <img src="./img/Menu.svg" alt="Menu" />
+        </button>
+        <div class="logo2">Panto</div>
+        <div class="mobile-cart">
+          <a href="#"><img src="./img/Bag.svg" alt="" /></a>
+          <div class="cart-count">
+            <img src="./img/0.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="offcanvas-menu" class="mobile-menu-overlay">
+      <div class="layout-menu">
+        <button id="close-menu-btn" class="close-btn">&times;</button>
+        <div class="menu-body">
+          <ul>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <section class="hero">
       <div class="hero-content">
         <h1>
-          Make Your Interior More <br />
+          Make Your Interior More   
           Minimalistic & Modern
         </h1>
         <p>
           Turn your room with panto into a lot more minimalist and modern with
           ease and speed
         </p>
-        <div class="search-container">
-          <input type="text" placeholder="Search furniture" />
+       <div class="search-container">
+        <div class="search-container-blur"></div>
+        <div class="search-container-line">
+           <input type="text" placeholder="Search furniture"/>
           <button type="submit">
             <img src="./img/Search.svg" class="img-search" alt="Search icon" />
           </button>
+     
         </div>
-        <div class="hotspot-container">
+       </div>
+        <div class="hotspot-container1">
           <div class="color-selector">
             <img
-              src="./img/Union.svg"
+              src="./img/Border.svg"
               alt=""
               style="
                 width: 112px;
@@ -162,12 +125,13 @@
               class="hotspot-outer"
               style="
                 position: absolute;
-                top: 116%;
-                left: -18.2%;
+                top: 630%;
+                left: -198px;
                 width: 32px;
                 height: 32px;
                 border-radius: 50%;
-                border: 1px solid #fff;
+                border: 1px solid var(--white-border-06);
+                backdrop-filter: blur(8px);
                 box-sizing: border-box;
                 pointer-events: none;
                 z-index: 1;
@@ -180,22 +144,23 @@
               style="
                 top: 230%;
                 left: 4.5%;
-
                 width: 18px;
                 height: 18px;
                 border: 10px;
+                z-index:2;
               "
             ></span>
             <span
               class="hotspot-outer"
               style="
                 position: absolute;
-                top: 103%;
-                left: 1%;
-                width: 62px;
-                height: 62px;
+                top: 310%;
+                left: -2.7%;
+                width: 56px;
+                height: 56px;
                 border-radius: 50%;
-                border: 1px solid #fff;
+                border: 1px solid var(--white-border-06);
+                backdrop-filter: blur(8px);
                 box-sizing: border-box;
                 pointer-events: none;
                 z-index: 1;
@@ -207,16 +172,17 @@
             <span
               class="hotspot-outer"
               style="
-                position: absolute;
-                top: 121.7%;
-                right: 38.9%;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                border: 1px solid #fff;
-                box-sizing: border-box;
-                pointer-events: none;
-                z-index: 1;
+              position: absolute;
+              top: 764%;
+              right: 35.9%;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              border: 1px solid var(--white-border-06);
+              backdrop-filter: blur(8px);
+              box-sizing: border-box;
+              pointer-events: none;
+              z-index: 1;
               "
             ></span>
           </button>
@@ -225,19 +191,20 @@
             <span
               class="hotspot-outer"
               style="
-                position: absolute;
-                top: 122.8%;
-                right: -23.2%;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                border: 1px solid #fff;
-                box-sizing: border-box;
-                pointer-events: none;
-                z-index: 1;
+              position: absolute;
+              top: 860%;
+              right: -28.95%;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              border: 1px solid var(--white-border-06);
+              backdrop-filter: blur(8px);
+              box-sizing: border-box;
+              pointer-events: none;
+              z-index: 1;
               "
             ></span>
-          </button>
+            </button>
         </div>
 
 
@@ -260,34 +227,41 @@
             </button>
           </div>
         </div> -->
-
+>>>>>>>>> Temporary merge branch 2
       </div>
     </section>
     <section class="features">
-      <div class="container">
+      <div class="container1">
         <div class="feature-cards">
           <div class="feature-cards-title">
             <h2>Why <br />Choosing Us</h2>
           </div>
-          <div class="feature-card">
+       <div class="feature-cards-content">
+           <div class="feature-card">
             <h3>Luxury facilities</h3>
             <p>
               The advantage of hiring a workspace with us is that givees you
               comfortable service and all-around facilities.
             </p>
-            <a href="#" class="more-info"
-              >More Info <img src="./img/Arrow.svg" alt=""
-            /></a>
+            <button class="more-info-container">
+              <a href="#" class="more-info"
+              >More Info </a>
+              <img src="./img/Arrow.svg" alt=""
+            />
+            </button>
           </div>
           <div class="feature-card">
             <h3>Affordable Price</h3>
             <p>
-              You can get a workspace of the highest quality at an affordable
+              You can get a workspace of the highst quality at an affordable
               price and still enjoy the facilities that are oly here.
             </p>
-            <a href="#" class="more-info"
-              >More Info <img src="./img/Arrow.svg" alt=""
-            /></a>
+            <button class="more-info-container">
+              <a href="#" class="more-info"
+              >More Info </a>
+          <img src="./img/Arrow.svg" alt=""
+            />
+            </button>
           </div>
           <div class="feature-card">
             <h3>Many Choices</h3>
@@ -295,14 +269,17 @@
               We provide many unique work space choices so that you can choose
               the workspace to your liking.
             </p>
-            <a href="#" class="more-info"
-              >More Info <img src="./img/Arrow.svg" alt=""
-            /></a>
+            <button class="more-info-container" >
+              <a href="#" class="more-info"
+              >More Info </a>
+            <img src="./img/Arrow.svg" alt=""
+            />
+            </button>
           </div>
+       </div>
         </div>
       </div>
     </section>
-     
   </body>
 </html>
 
@@ -319,4 +296,5 @@
   menu.onclick = (e) => {
     if (e.target === menu) menu.style.display = "none";
   };
+  
 </script>
