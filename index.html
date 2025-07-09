@@ -7,72 +7,7 @@
     <link rel="stylesheet" href="slick/slick.css" />
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="index.css" />
-    <!-- <link rel="stylesheet" href="index.css" /> -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "orange-primary": "#ff8a00",
-              "orange-primary-11": "rgba(229, 132, 17, 1)",
-              "orange-primary-1": "rgba(246, 151, 63, 1)",
-              "blue-primary": "#00d6c9",
-              "dark-gray": "#1e1e1e",
-              "dark-gray-01": "rgba(30, 30, 30, 1)",
-              "dark-gray-1": "rgba(13, 27, 57, 1)",
-              "white-bg": "#ffffff",
-              "gray-bg": "rgba(124, 124, 124, 1)",
-              "light-gray-bg": "#f7f7f7",
-              "white-border-60": "#ffffff99",
-              "white-border-15": "#ffffff26",
 
-              "white-border-01": "rgba(255, 255, 255, 1)",
-              "white-border-02": "rgba(255, 255, 255, 0.2)",
-              "white-border-06": "rgba(255, 255, 255, 0.6)",
-              "white-border-47": "rgba(247, 247, 247, 1)",
-              "white-border-50": "rgba(250, 250, 250, 1)",
-              "white-border-84": "rgba(255, 255, 255, 0.84)",
-              "pale-border-1": "rgba(238, 238, 238, 1)",
-              "text-light-gray": "#f5f5f5",
-              "text-inter": "rgba(141, 141, 141, 1)",
-              "text-pc": "rgba(13, 27, 57, 1)",
-              "yellow-primary": "rgba(246, 183, 111, 1)",
-            },
-            fontFamily: {
-              gilroy: ["Gilroy", "sans-serif"],
-              dmsans: ["DM Sans", "sans-serif"],
-              inter: ["Inter", "sans-serif"],
-            },
-            fontSize: {
-              'xxxl': '80px',
-      }, 
-      screens: {
-        'xs-custom-max': '300px',
-        'xs-custom-min': '450px',
-        'xs-custom-max-lv': '480px',
-        'xs-custom': '640px',      
-        'sm-custom': '681px',
-        'md-custom': '769px',
-        'md-custom-min': '861px',
-        'md-custom-max': '992px',
-        'lg-custom-max': '1024px',
-        'lg-custom': '1025px',
-        'xl-custom-max': '1201px',
-        'xl-custom': '1281px',
-      },
-          },
-        },
-      };
-    </script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
   </head>
   <body class="m-0 p-0 bg-white font-gilroy">
     <!-- Desktop Header -->
@@ -299,160 +234,186 @@
               </div>
           </div>
       </div>
-  </section>
-  <section class="bg-white-border-47 w-full h-auto relative px-[20px]">
-    <div class="pt-12 ">
-        <div class="flex h-13 justify-center items-center mx-auto w-full max-w-md text-2xl md:text-[42px] text-dark-gray font-bold text-center mb-1">
-          Best Selling Product
-        </div>
-    </div>
+    </section>
+     <div class="container2">
+      <div class="text-container"
+      ><h1 class="text-ct2">Best Selling Product</h1></div>
 
-    <!-- Filter Tabs -->
-   <div class=" px-[40px]">
-    <div class="flex bg-pale-border-1 rounded-full p-1 max-w-[348px] h-[57px] mx-auto mt-8 mb-[20px] items-center justify-center">
-      <button class="w-full w-[84px] h-[45px] rounded-full bg-white text-dark-gray border-none cursor-pointer text-lg font-regular font-gilroy transition-all opacity-80">Chair</button>
-      <button class="w-full w-[84px] h-[45px] rounded-full bg-transparent text-dark-gray border-none cursor-pointer text-lg font-regular font-gilroy transition-all hover:bg-white opacity-80">Beds</button>
-      <button class="w-full w-[84px] h-[45px] rounded-full bg-transparent text-dark-gray border-none cursor-pointer text-lg font-regular font-gilroy transition-all hover:bg-white opacity-80">Sofa</button>
-      <button class="w-full w-[84px] h-[45px] rounded-full bg-transparent text-dark-gray border-none cursor-pointer text-lg font-regular font-gilroy transition-all hover:bg-white opacity-80">Lamp</button>
-  </div>
-   </div>    
-            <!-- products-container -->
-            <div class=" w-full p-[20px] overflow-hidden">
+      <div class="filter-tabs">
+        <button class="filter-btn active">Chair</button>
+        <button class="filter-btn">Beds</button>
+        <button class="filter-btn">Sofa</button>
+        <button class="filter-btn">Lamp</button>
+      </div>
+          
+  <div class="product-carousel-container">
+    <div  class="product-carousel">
+      <button class="nav-btn-prev-btn">
+                <img src="./img/Nextleft.svg" alt="" />
+              </button>
+                <button class="nav-btn-line-btn">
+                <img src="./img/Nextright.svg" alt="" />
+              </button>
+ <div class="products-container">
+       <div class="products">
+           <!-- <button class="nav-btn-prev-btn">
+                <img src="./img/Nextleft.svg" alt="" />
+              </button> -->
+          
+        <div class="product-card-container">
+            <div class="product-card">
+              <div class="product-image">
+              <img
+                src="./img/Char1.svg"
+                alt="Sakarias Armchair"
+                class="chair-img"
+                style="width: 217.89599609375px; height: 255.9010467529297px"
+              />
+            </div>
+            <div class="product-info">
              
-              <div class="flex max-w-[1280px] w-full mx-auto relative ">
-                <button class="absolute z-[1000] top-1/2 xl:left-[24px] left-[-20px] transform -translate-y-1/2 bg-white border-none rounded-full p-3 w-12 h-12 flex items-center justify-center cursor-pointer shadow-lg hidden md-custom-max:block">
-                  <img src="./img/Nextleft.svg" alt="" class="nav-btn1">
-               </button>
-               <button class="absolute z-[1000] top-1/2 xl:right-[24px] right-[-20px] transform -translate-y-1/2 bg-white border-none rounded-full p-3 w-12 h-12 flex items-center justify-center cursor-pointer shadow-lg hidden md-custom-max:block">
-                   <img src="./img/Nextright.svg" alt="" class="nav-btn2">
-               </button>
-                  <div class=" max-w-[1198px] mx-auto w-full">
-                      <div class="products flex relative  px-[40px] -mx-12 flex-nowrap z-10">
-                          <!-- Product Cards -->
-                          <div class=" relative px-5">
-                              <div class="product-card  min-w-[268px] mx-auto bg-white rounded-2xl transition-all z-10">
-                                  <div class="product-image h-60 w-full flex items-start justify-center bg-white-border-50 z-10">
-                                      <img src="./img/Char1.svg" alt="Sakarias Armchair" class="max-w-55 w-full max-h-64 object-contain absolute z-1000 top-[-40px]" />
-                                  </div>
-                                  <div class="product-info relative rounded-b-2xl px-[21px] pt-[13.71px] pb-[27.32px]">
-                                      <span class="category text-gray-500 text-base leading-tight block mb-[6px] font-inter font-normal">Chair</span>
-                                      <h3 class="product-name text-[21.3px] mb-1.5 font-inter font-semibold text-dark-gray leading-tight">Sakarias Armchair</h3>
-                                      <div class="flex mb-4 text-yellow-primary">
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                      </div>
-                                      <div class="price-cart w-full flex bg-white justify-between items-center mt-8 pb-5">
-                                          <span class="price flex text-xl font-inter font-semibold text-dark-gray-1 w-[54.84px]"><img src="./img/$.svg" alt="">392</span>
-                                          <button class="add-to-cart w-[48.74px] h-[48.74px] rounded-full bg-dark-gray text-white border-none flex mt-1 items-center justify-center cursor-pointer transition-colors hover:bg-gray-800">
-                                              <img src="./img/Plus.svg" alt="">
-                                          </button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-  
-                          <!-- Repeat similar structure for other products -->
-                          <div class=" relative px-5">
-                              <div class="product-card min-w-[268px] mx-auto bg-white rounded-2xl transition-all z-10">
-                                  <div class="product-image h-60 w-full flex items-start justify-center bg-white-border-50">
-                                      <img src="./img/Char2.svg" alt="Baltsar Chair" class="max-w-55 w-full max-h-64 object-contain relative  top-[-40px] z-10" />
-                                  </div>
-                                  <div class="product-info relative rounded-b-2xl px-[21px] pt-[13.71px] pb-[27.32px]">
-                                      <span class="category text-gray-500 text-base leading-tight block mb-[6px] font-inter font-normal">Chair</span>
-                                      <h3 class="product-name text-[21.3px] mb-1.5 font-inter font-semibold text-dark-gray-1 leading-tight">Baltsar Chair</h3>
-                                      <div class="flex mb-4 text-yellow-primary">
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                      </div>
-                                      <div class="price-cart w-full flex bg-white justify-between items-center mt-8 pb-5">
-                                          <span class="price flex text-xl font-inter font-semibold text-dark-gray-1 w-[54.84px]"><img src="./img/$.svg" alt="">299</span>
-                                          <button class="add-to-cart w-[48.74px] h-[48.74px] rounded-full bg-dark-gray text-white border-none flex mt-1 items-center justify-center cursor-pointer transition-colors hover:bg-gray-800">
-                                              <img src="./img/Plus.svg" alt="">
-                                          </button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-  
-                          <div class=" relative px-5">
-                              <div class="product-card min-w-[268px] mx-auto bg-white rounded-2xl transition-all z-10">
-                                  <div class="product-image h-60 w-full flex items-start justify-center bg-white-border-50">
-                                      <img src="./img/Char3.svg" alt="Anjay Chair" class="max-w-55 w-full max-h-64 object-contain relative z-10 top-[-40px]" />
-                                  </div>
-                                  <div class="product-info relative rounded-b-2xl px-[21px] pt-[13.71px] pb-[27.32px]">
-                                      <span class="category text-gray-500 text-base leading-tight block mb-[6px] font-inter font-normal">Chair</span>
-                                      <h3 class="product-name text-[21.3px] mb-1.5 font-inter font-semibold text-dark-gray-1 leading-tight">Anjay Chair</h3>
-                                      <div class="flex mb-4 text-yellow-primary">
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                      </div>
-                                      <div class="price-cart w-full flex bg-white justify-between items-center mt-8 pb-5">
-                                          <span class="price flex text-xl font-inter font-semibold text-dark-gray-1 w-[54.84px]"><img src="./img/$.svg" alt="">519</span>
-                                          <button class="add-to-cart w-[48.74px] h-[48.74px] rounded-full bg-dark-gray text-white border-none flex mt-1 items-center justify-center cursor-pointer transition-colors hover:bg-gray-800">
-                                              <img src="./img/Plus.svg" alt="">
-                                          </button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-  
-                          <div class=" relative px-5">
-                              <div class="product-card min-w-[268px] mx-auto bg-white rounded-2xl transition-all z-10">
-                                  <div class="product-image h-60 w-full flex items-start justify-center bg-white-border-50">
-                                      <img src="./img/Char4.svg" alt="Nyantuy Chair" class="max-w-55 w-full max-h-64 object-contain relative z-10 top-[-40px]" />
-                                  </div>
-                                  <div class="product-info relative rounded-b-2xl px-[21px] pt-[13.71px] pb-[27.32px]">
-                                      <span class="category text-gray-500 text-base leading-tight block mb-[6px] font-inter font-normal">Chair</span>
-                                      <h3 class="product-name text-[21.3px] mb-1.5 font-inter font-semibold text-dark-gray-1 leading-tight">Nyantuy Chair</h3>
-                                      <div class="flex mb-4 text-yellow-primary">
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                          <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                      </div>
-                                      <div class="price-cart w-full flex bg-white justify-between items-center mt-8 pb-5">
-                                          <span class="price flex text-xl font-inter font-semibold text-dark-gray-1 w-[54.84px]"><img src="./img/$.svg" alt="">921</span>
-                                          <button class="add-to-cart w-[48.74px] h-[48.74px] rounded-full bg-dark-gray text-white border-none flex mt-1 items-center justify-center cursor-pointer transition-colors hover:bg-gray-800">
-                                              <img src="./img/Plus.svg" alt="">
-                                          </button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class=" relative px-5">
-                            <div class="product-card min-w-[268px] mx-auto bg-white rounded-2xl transition-all z-10">
-                                <div class="product-image h-60 w-full flex items-start justify-center bg-white-border-50">
-                                    <img src="./img/Char1.svg" alt="Sakarias Armchair" class="max-w-55 w-full max-h-64 object-contain relative z-10 top-[-40px]" />
-                                </div>
-                                <div class="product-info relative rounded-b-2xl px-[21px] pt-[13.71px] pb-[27.32px]">
-                                    <span class="category text-gray-500 text-base leading-tight block mb-[6px] font-inter font-normal">Chair</span>
-                                    <h3 class="product-name text-[21.3px] mb-1.5 font-inter font-semibold text-dark-gray-1 leading-tight">Sakarias Armchair</h3>
-                                    <div class=" flex mb-4 text-yellow-primary">
-                                        <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="w-[18px] h-[18px]"><img src="./img/Star.svg" alt=""></span>
-                                    </div>
-                                    <div class="price-cart w-full flex bg-white justify-between items-center mt-8 pb-5">
-                                        <span class="price flex text-xl font-inter font-semibold text-dark-gray-1 w-[54.84px]"><img src="./img/$.svg" alt="">392</span>
-                                        <button class="add-to-cart w-[48.74px] h-[48.74px] rounded-full bg-dark-gray text-white border-none flex mt-1 items-center justify-center cursor-pointer transition-colors hover:bg-gray-800">
-                                            <img src="./img/Plus.svg" alt="">
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+              <span class="category">Chair</span>
+              <h3 class="product-name">Sakarias Armchair</h3>
+              <div class="rating">
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+              </div>
+              <div class="price-cart">
+                <span style="display: flex" class="price"
+                  ><img class="img-pc" src="./img/$.svg" alt="" />392</span
+                >
+                <button class="add-to-cart">
+                  <img class="img-plus" src="./img/Plus.svg" alt=""  style="size: 24.37px;"/>
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        <div class="product-card-container">
+           <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./img/Char2.svg"
+                alt="Baltsar Chair"
+                class="chair-img"
+              />
+            </div>
+            <div class="product-info">
+              <span class="category">Chair</span>
+              <h3 class="product-name">Baltsar Chair</h3>
+              <div class="rating">
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+              </div>
+              <div class="price-cart">
+                <span style="display: flex" class="price"
+                  ><img class="img-pc" src="./img/$.svg" alt="" />299</span
+                >
+                <button class="add-to-cart">
+                  <img class="img-plus" src="./img/Plus.svg" alt=""/>
+                </button>
+              </div>
+            </div>
+          </div>
+         </div>
+
+        <div class="product-card-container">
+           <div class="product-card">
+            <div class="product-image">
+              <img src="./img/Char3.svg" alt="Anjay Chair" class="chair-img" />
+            </div>
+            <div class="product-info">
+              <span class="category">Chair</span>
+              <h3 class="product-name">Anjay Chair</h3>
+              <div class="rating">
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+              </div>
+              <div class="price-cart">
+                <span style="display: flex" class="price"
+                  ><img class="img-pc" src="./img/$.svg" alt="" />519
+                </span>
+                <button class="add-to-cart">
+                  <img class="img-plus" src="./img/Plus.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+         </div>
+
+        <div class="product-card-container">
+           <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./img/Char4.svg"
+                alt="Nyantuy Chair"
+                class="chair-img"
+              />
+            </div>
+          
+            <div class="product-info">
+              <span class="category">Chair</span>
+              <h3 class="product-name">Nyantuy Chair</h3>
+              <div class="rating">
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+              </div>
+              <div class="price-cart">
+                <span style="display: flex" class="price"
+                  ><img class="img-pc" src="./img/$.svg" alt="" />921</span
+                >
+                <button class="add-to-cart">
+                  <img class="img-plus" src="./img/Plus.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+         </div>
+        <div class="product-card-container">
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./img/Char1.svg"
+                alt="Sakarias Armchair"
+                class="chair-img"
+                style="width: 217.89599609375px; height: 255.9010467529297px"
+              />
+            </div>
+            <div class="product-info">
+             
+              <span class="category">Chair</span>
+              <h3 class="product-name">Sakarias Armchair</h3>
+              <div class="rating">
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+                <span class="star-rating"><img src="./img/Star.svg" alt="" /></span>
+              </div>
+              <div class="price-cart">
+                <span style="display: flex" class="price"
+                  ><img class="img-pc" src="./img/$.svg" alt="" />392</span
+                >
+                <button class="add-to-cart">
+                  <img class="img-plus" src="./img/Plus.svg" alt=""  style="size: 24.37px;"/>
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
 
                         <!-- Repeat similar structure for other products -->
                         <div class=" relative px-5">
@@ -611,207 +572,268 @@
                   rounded-2xl z-1 xs-custom:right-[-242px] right-0 "></div>  
               </div>
           </div>  
-      </div>
-  </section>
-
-    
-   </div>
-
-   <div class="max-w-7xl w-full m-auto overflow-hidden">
-    <section class="testimonials-section text-center ">
-        <span class="section-label inline-block h-[22px] items-center text-orange-primary-11 font-semibold text-lg tracking-widest leading-tight lg:mb-[20px] mb-0">TESTIMONIALS</span>
-        <h2 class="section-title-tes  text-[36px] md:text-[42px] leading-tight mx-auto w-full max-w-md h-[52px] items-center content-center text-dark-gray-01 font-bold ">Our Client Reviews</h2>
-        
-        <div class="testimonials-carousel-container overflow-hidden">
-            <div class="testimonials-carousel relative w-full max-w-[1265px] mx-auto xl:px-[20px] lg:px-[40px] md:px-[160px] md-custom-min:px-[1px] md-custom-max:px-[10px] sm:px-[120px] xs-custom-min:px-[40px]">
-                <!-- Navigation Buttons -->
-                <button class="btn-left absolute z-[1000] top-[228px] xl:left-[16px] left-[20px] transform -translate-y-1/5 bg-white border-none rounded-full p-3 w-12 h-12 flex items-center justify-center cursor-pointer shadow-lg hidden lg:block">
-                  <img src="./img/Nextleft.svg" alt="">
-                </button>
-                <button class="btn-right absolute z-[1000] top-[228px] xl:right-[16px] right-[20px] transform -translate-y-1/5 bg-white border-none rounded-full p-3 w-12 h-12 flex items-center justify-center cursor-pointer shadow-lg hidden lg:block ">
-                    <img src="./img/Nextright.svg" alt="">
+         </div>
+       </section>
+    </div>
+   <div class="container5">
+        <section class="testimonials-section">
+            <span class="section-label">TESTIMONIALS</span>
+            
+            <h2 class="section-title-tes">Our Client Reviews</h2>
+            
+            <div class="testimonials-carousel-container">
+              <div class="testimonials-carousel">
+                <button class="nav-btn-prev ">
+                    <span class="material-symbols-outlined"><img src="./img/Nextleft.svg" alt=""></span>
                 </button>
                 
-                <div class="testimonials mx-auto w-full max-w-[1300px]  md:mt-0 ">
-                    <div class="testimonials-container flex">
-                        <!-- Testimonial Cards -->
-                        <div class="testimonial-card-container w-full h-auto px-[19px] "> 
-                            <div class="testimonial-card w-full md:min-w-[270px] sx:max-w-[200px] rounded-2xl relative mb-[50px] sx:ml-[20px] ">
-                                <div class="testimonial-bg w-full">
-                                    <img src="./img/Test1.svg" alt="Modern living room interior" class="testimonial-bg-img z-10 w-full object-cover rounded-2xl" />
-                                   <div class="absolute inset-0 w-[300px] h-[380px] absolute -z-10  top-[107px] left-[21px] object-cover blur-lg rounded-2xl hidden xl:block"><img src="./img/Test1.svg" alt="Modern living room interior" class="w-full h-full" /></div>
+                <div class="testimonials" >
+                  <div class="testimonials-container" >
+                  <div class="testimonial-card-container"> 
+                     <div class="testimonial-card">
+                        <div class="testimonial-bg">
+                            <img src="./img/Test1.svg" alt="Modern living room interior" class="testimonial-bg-img">
+                             <img src="./img/Test3.svg" alt="Modern dining room interior" class="testimonial-bg-img-blur">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="client-info">
+                                <div class="client-avatar">
+                                    <img src="./img/Bang3.svg" alt="Bang Upin" class="avatar-img">
+                                    <img src="./img/Bang3.svg" alt="Bang Upin" class="avatar-img-blur">
                                 </div>
-                                <div class="testimonial-content absolute left-[50%] transform translate-x-[-50%] top-[70%] w-[334px] h-[239px]  p-6 rounded-2xl z-10 text-center transform -translate-y-1/2 shadow-lg">
-                                  <img src="./img/Union2.svg" alt="" class="absolute left-[50%] transform translate-x-[-50%] -translate-y-1/2 top-[49%] -z-10  w-auto max-w-[334px] xs:w-[200px] ">
-
-                                    <div class="client-info">
-                                      <div class="client-avatar w-16 h-16 mt-10 mx-auto rounded-full relative z-10">
-                                        <img src="./img/Bang1.svg" alt="Ibuk Sukijan" class="avatar-img w-12 h-12 rounded-full top-[-59px] left-2 bg-white/84 absolute z-10" />
-                                        <img src="./img/Bang1.svg" alt="Ibuk Sukijan" class="avatar-img w-12 h-12 rounded-full top-[-47px] left-2 bg-white/84 absolute blur-md -z-10" />
-                                    </div>
-                                        <h3 class="client-name flex text-lg font-bold w-full mt-[-62px] mb-[6px] text-dark-gray justify-center">Bang Upin</h3>
-                                        <p class="client-title text-xs text-dark-gray-01 font-regular text-center mb-[22px] opacity-60">Pedagang Asongan</p>
-                                    </div>
-                                    
-                                    <p class="testimonial-text text-sm leading-tight text-dark-gray-01 font-regular w-full max-w-[252px] text-center mb-[22px] ml-[18px] opacity-80 whitespace-nowrap overflow-hidden text-ellipsis">
-                                        "Terimakasih banyak, kini ruanganku <br/>menjadi lebih mewah dan terlihat mahal"
-                                    </p>
-                                    
-                                    <div class="rating-tes flex mx-auto w-22 justify-center gap-1 mt-auto text-orange-primary-1">
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star w-[14px] h-[14px] opacity-30"><img src="./img/Star.svg" alt=""></span>
-                                    </div>
-                                </div>
+                                <h3 class="client-name">Bang Upin</h3>
+                                <p class="client-title">Pedagang Asongan</p>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Terimakasih banyak, kini ruanganku <br>menjadi lebih mewah dan terlihat mahal"
+                            </p>
+                            
+                            <div class="rating-tes">
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star"><img src="./img/Star2.svg" alt="" style="opacity: 30%; width: 11.67px; height: 11.67px"></span>
                             </div>
                         </div>
-                        
-                        <div class="testimonial-card-container w-full px-[19px]"> 
-                            <div class="testimonial-card w-full md:min-w-[270px] sx:max-w-[200px] rounded-2xl relative mb-[50px] sx:ml-[20px] ">
-                              <div class="testimonial-bg w-full">
-                                <img src="./img/Test2.svg" alt="Modern living room interior" class="testimonial-bg-img w-full object-cover rounded-2xl" />
-                                <div class="absolute inset-0 w-[300px] h-[380px] absolute -z-10  top-[107px] left-[21px] object-cover blur-lg rounded-2xl hidden xl:block"><img src="./img/Test2.svg" alt="Modern living room interior" class="w-full h-full" /></div> 
-                            </div>
-                            <div class="testimonial-content absolute left-[50%] transform translate-x-[-50%] top-[70%] w-[334px] h-[239px]  p-6 rounded-2xl z-10 text-center transform -translate-y-1/2 shadow-lg">
-                              <img src="./img/Union2.svg" alt="" class="absolute left-[50%] transform translate-x-[-50%] -translate-y-1/2 top-[49%] -z-10  w-auto max-w-[334px] xs:w-[200px] ">
-                                    <div class="client-info">
-                                        <div class="client-avatar w-16 h-16 mt-10 mx-auto rounded-full relative z-10">
-                                          <img src="./img/Bang2.svg" alt="Ibuk Sukijan" class="avatar-img w-12 h-12 rounded-full top-[-59px] left-2 bg-white/84 absolute z-10" />
-                                          <img src="./img/Bang2.svg" alt="Ibuk Sukijan" class="avatar-img w-12 h-12 rounded-full top-[-47px] left-2 bg-white/84 absolute blur-md -z-10" />
-                                        </div>
-                                        <h3 class="client-name flex text-lg font-bold w-full mt-[-62px] mb-[6px] text-dark-gray justify-center">Ibuk Sukijan</h3>
-                                        <p class="client-title text-xs text-dark-gray-01 font-regular text-center mb-[22px] opacity-60">Ibu Rumah Tangga</p>
-                                    </div>
-                                    
-                                    <p class="testimonial-text text-sm leading-tight text-dark-gray-01 font-regular w-full max-w-[252px] text-center mb-[22px] ml-[18px] opacity-80 whitespace-nowrap overflow-hidden text-ellipsis">
-                                        "Makasih Panto, aku sekarang berasa <br/>tinggal di apartment karena barang-barang yang terlihat mewah"
-                                    </p>
-                                    
-                                    <div class="rating-tes flex mx-auto w-22 justify-center gap-1 mt-auto text-orange-primary-1">
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star w-[14px] h-[14px] opacity-30"><img src="./img/Star.svg" alt=""></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonial-card-container w-full px-[19px]">
-                            <div class="testimonial-card  md:min-w-[280px]  max-w-full sx:max-w-[280px] rounded-2xl relative mb-[50px] sx:ml-[20px] ">
-                                <div class="testimonial-bg w-full">
-                                  <img src="./img/Test3.svg" alt="Modern living room interior" class="testimonial-bg-img w-full object-cover rounded-2xl" />
-                                  <div class="absolute inset-0 w-[300px] h-[380px] absolute -z-10  top-[107px] left-[21px] object-cover blur-lg rounded-2xl hidden xl:block"><img src="./img/Test3.svg" alt="Modern living room interior" class="w-full h-full" /></div>
-                                </div>  
-                                <div class="testimonial-content absolute left-[50%] transform translate-x-[-50%] top-[70%] w-[334px] h-[239px]  p-6 rounded-2xl z-10 text-center transform -translate-y-1/2 shadow-lg">
-                                  <img src="./img/Union2.svg" alt="" class="absolute left-[50%] transform translate-x-[-50%] -translate-y-1/2 top-[49%] -z-10  w-auto max-w-[334px] xs:w-[200px] ">
-                                    <div class="client-info">
-                                        <div class="client-avatar w-16 h-16 mt-10 mx-auto rounded-full relative z-10">
-                                          <img src="./img/Bang.svg" alt="Ibuk Sukijan" class="avatar-img w-12 h-12 rounded-full top-[-59px] left-2 bg-white/84 absolute z-10" />
-                                          <img src="./img/Bang.svg" alt="Ibuk Sukijan" class="avatar-img w-12 h-12 rounded-full top-[-47px] left-2 bg-white/84 absolute blur-md -z-10" />
-                                        </div>
-                                        <h3 class="client-name flex text-lg font-bold w-full mt-[-62px] mb-[6px] text-dark-gray justify-center">Mpok Ina</h3>
-                                        <p class="client-title text-xs text-dark-gray-01 font-regular text-center mb-[22px] opacity-60">Karyawan Swasta</p>
-                                    </div>
-                                    
-                                    <p class="testimonial-text text-sm leading-tight text-dark-gray-01 font-regular w-full max-w-[252px] text-center mb-[22px] ml-[18px] opacity-80 whitespace-nowrap overflow-hidden text-ellipsis">
-                                        "Sangat terjangkau untuk kantong <br/> saya yang tidak terlalu banyak"
-                                    </p>
-                                    
-                                    <div class="rating-tes flex mx-auto w-22 justify-center gap-1 mt-auto text-orange-primary-1">
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                        <span class="star w-[14px] h-[14px] opacity-30"><img src="./img/Star.svg" alt=""></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card-container w-full h-auto px-[19px] "> 
-                          <div class="testimonial-card w-full md:min-w-[270px] sx:max-w-[200px] rounded-2xl relative mb-[50px] sx:ml-[20px] ">
-                              <div class="testimonial-bg w-full">
-                                  <img src="./img/Test1.svg" alt="Modern living room interior" class="testimonial-bg-img z-10 w-full object-cover rounded-2xl" />
-                                 <div class="absolute inset-0 w-[300px] h-[380px] absolute -z-10  top-[107px] left-[21px] object-cover blur-lg rounded-2xl hidden xl:block"><img src="./img/Test1.svg" alt="Modern living room interior" class="w-full h-full" /></div>
-                              </div>
-                              <div class="testimonial-content absolute left-[50%] transform translate-x-[-50%] top-[70%] w-[334px] h-[239px]  p-6 rounded-2xl z-10 text-center transform -translate-y-1/2 shadow-lg">
-                                <img src="./img/Union2.svg" alt="" class="absolute left-[50%] transform translate-x-[-50%] -translate-y-1/2 top-[49%] -z-10  w-auto max-w-[334px] xs:w-[200px] ">
-
-                                  <div class="client-info">
-                                    <div class="client-avatar w-16 h-16 mt-10 mx-auto rounded-full relative z-10">
-                                      <img src="./img/Bang1.svg" alt="Ibuk Sukijan" class="avatar-img w-12 h-12 rounded-full top-[-59px] left-2 bg-white/84 absolute z-10" />
-                                      <img src="./img/Bang1.svg" alt="Ibuk Sukijan" class="avatar-img w-12 h-12 rounded-full top-[-47px] left-2 bg-white/84 absolute blur-md -z-10" />
-                                  </div>
-                                      <h3 class="client-name flex text-lg font-bold w-full mt-[-62px] mb-[6px] text-dark-gray justify-center">Bang Upin</h3>
-                                      <p class="client-title text-xs text-dark-gray-01 font-regular text-center mb-[22px] opacity-60">Pedagang Asongan</p>
-                                  </div>
-                                  
-                                  <p class="testimonial-text text-sm leading-tight text-dark-gray-01 font-regular w-full max-w-[252px] text-center mb-[22px] ml-[18px] opacity-80 whitespace-nowrap overflow-hidden text-ellipsis">
-                                      "Terimakasih banyak, kini ruanganku <br/>menjadi lebih mewah dan terlihat mahal"
-                                  </p>
-                                  
-                                  <div class="rating-tes flex mx-auto w-22 justify-center gap-1 mt-auto text-orange-primary-1">
-                                      <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                      <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                      <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                      <span class="star-filled w-[14px] h-[14px]"><img src="./img/Star.svg" alt=""></span>
-                                      <span class="star w-[14px] h-[14px] opacity-30"><img src="./img/Star.svg" alt=""></span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
                     </div>
+                     </div>
+                    
+                  <div class="testimonial-card-container"> 
+                  <div class="testimonial-card">
+                        <div class="testimonial-bg">
+                            <img src="./img/Test2.svg" alt="Modern bedroom interior" class="testimonial-bg-img">
+                             <img src="./img/Test3.svg" alt="Modern dining room interior" class="testimonial-bg-img-blur">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="client-info">
+                                <div class="client-avatar">
+                                    <img src="./img/Bang.svg" alt="Ibuk Sukijan" class="avatar-img">
+                                     <img src="./img/Bang.svg" alt="Ibuk Sukijan" class="avatar-img-blur">
+                                </div>
+                                <h3 class="client-name">Ibuk Sukijan</h3>
+                                <p class="client-title">Ibu Rumah Tangga</p>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Makasih Panto, aku sekarang berasa <br>tinggal di apartment karena barang-barang yang terlihat mewah"
+                            </p>
+                            
+                            <div class="rating-tes">
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star"><img src="./img/Star2.svg" alt="" style="opacity: 30%; width: 11.67px; height: 11.67px"></span>
+                            </div>
+                        </div>
+                    </div>    
+                      </div>
+                   <div class="testimonial-card-container">
+                         <div class="testimonial-card">
+                        <div class="testimonial-bg">
+                            <img src="./img/Test3.svg" alt="Modern dining room interior" class="testimonial-bg-img">
+                             <img src="./img/Test3.svg" alt="Modern dining room interior" class="testimonial-bg-img-blur">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="client-info">
+                                <div class="client-avatar">
+                                    <img src="./img/Bang2.svg" alt="Mpok Ina" class="avatar-img">
+                                    <img src="./img/Bang2.svg" alt="Mpok Ina" class="avatar-img-blur">
+                                </div>
+                                <h3 class="client-name">Mpok Ina</h3>
+                                <p class="client-title">Karyawan Swasta</p>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Sangat terjangkau untuk kantong <br> saya yang tidak terlalu banyak"
+                            </p>
+                            
+                            <div class="rating-tes">
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                               <span class="star"><img src="./img/Star2.svg" alt="" style="opacity: 30%; width: 11.67px; height: 11.67px"></span>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="testimonial-card-container">
+                     <div class="testimonial-card">
+                        <div class="testimonial-bg">
+                            <img src="./img/Test1.svg" alt="Modern living room interior" class="testimonial-bg-img">
+                             <img src="./img/Test3.svg" alt="Modern dining room interior" class="testimonial-bg-img-blur">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="client-info">
+                                <div class="client-avatar">
+                                    <img src="./img/Bang3.svg" alt="Bang Upin" class="avatar-img">
+                                    <img src="./img/Bang3.svg" alt="Bang Upin" class="avatar-img-blur">
+                                </div>
+                                <h3 class="client-name">Bang Upin</h3>
+                                <p class="client-title">Pedagang Asongan</p>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Terimakasih banyak, kini ruanganku <br>menjadi lebih mewah dan terlihat mahal"
+                            </p>
+                            
+                            <div class="rating-tes">
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star"><img src="./img/Star2.svg" alt="" style="opacity: 30%; width: 11.67px; height: 11.67px"></span>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                    
+                 <div class="testimonial-card-container">
+                     <div class="testimonial-card">
+                        <div class="testimonial-bg">
+                            <img src="./img/Test2.svg" alt="Modern bedroom interior" class="testimonial-bg-img">
+                             <img src="./img/Test3.svg" alt="Modern dining room interior" class="testimonial-bg-img-blur">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="client-info">
+                                <div class="client-avatar">
+                                    <img src="./img/Bang.svg" alt="Ibuk Sukijan" class="avatar-img">
+                                     <img src="./img/Bang.svg" alt="Ibuk Sukijan" class="avatar-img-blur">
+                                </div>
+                                <h3 class="client-name">Ibuk Sukijan</h3>
+                                <p class="client-title">Ibu Rumah Tangga</p>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Makasih Panto, aku sekarang berasa <br>tinggal di apartment karena barang-barang yang terlihat mewah"
+                            </p>
+                            
+                            <div class="rating-tes">
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star"><img src="./img/Star2.svg" alt="" style="opacity: 30%; width: 11.67px; height: 11.67px"></span>
+                            </div>
+                        </div>
+                    </div> 
+                 </div>   
+                                    
+                   <div class="testimonial-card-container">
+                     <div class="testimonial-card">
+                        <div class="testimonial-bg">
+                            <img src="./img/Test3.svg" alt="Modern dining room interior" class="testimonial-bg-img">
+                             <img src="./img/Test3.svg" alt="Modern dining room interior" class="testimonial-bg-img-blur">
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="client-info">
+                                <div class="client-avatar">
+                                    <img src="./img/Bang2.svg" alt="Mpok Ina" class="avatar-img">
+                                    <img src="./img/Bang2.svg" alt="Mpok Ina" class="avatar-img-blur">
+                                </div>
+                                <h3 class="client-name">Mpok Ina</h3>
+                                <p class="client-title">Karyawan Swasta</p>
+                            </div>
+                            
+                            <p class="testimonial-text">
+                                "Sangat terjangkau untuk kantong <br> saya yang tidak terlalu banyak"
+                            </p>
+                            
+                            <div class="rating-tes">
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                                <span class="star-filled"><img src="./img/Star2.svg" alt="" style=" width: 11.67px; height: 11.08px;"></span>
+                               <span class="star"><img src="./img/Star2.svg" alt="" style="opacity: 30%; width: 11.67px; height: 11.67px"></span>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
                 </div>
+                <!-- <ul class="slick-dots">
+  <li class="slick-active"><button type="button">1</button></li>
+  <li><button type="button">2</button></li>
+  <li><button type="button">3</button></li>
+</ul> -->
+
+                </div>
+                
+                <button class="nav-btn-next-btn">
+                    <span class="material-symbols-outlined"><img src="./img/Nextright.svg" alt=""></span>
+                </button>
             </div>
-        </div>
-    </section>                    
-</div>
-
-<footer class="footer bg-light-gray-bg lg:pt-[118px] pt-[50px] w-full relative bottom-0 xl:mt-[50px] mt-0 xl:mt-[195px] px-[20px]">
-  <div class="footer-content max-w-[1064px] mx-auto flex flex-wrap mb-30 lg:pb-[118px] pb-[50px]">
-      <div class="footer-container max-w-[293px] w-full mr-[20px] md:mr-[152px] ">
-          <h2 class="text-[28px] text-dark-gray-01 mb-7 font-bold ">Panto</h2>
-          <p class="text-[15px] leading-relaxed text-dark-gray-01 font-medium w-[293px] w-auto  opacity-80 pb-[50px]">
-              The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.
-          </p>
-      </div>
-      <div class="footer-sections flex md:gap-[70px] lg:gap-[110px] gap-[50px] flex-wrap max-w-[619px] ">
-          <div class="footer-section w-[133px]">
-              <h3 class="text-orange-primary-1 text-[17px] mb-5 font-dmsans  relative">Services</h3>
-              <ul class="list-none p-0 w-33 opacity-80">
-                  <li class="mb-4"><a href="#" class="text-dark-gray-01 no-underline text-[15px] font-medium leading-relaxed hover:text-orange-primary hover:pl-1 transition-all">Email Marketing</a></li>
-                  <li class="mb-4"><a href="#" class="text-dark-gray-01 no-underline text-[15px] font-medium leading-relaxed hover:text-orange-primary hover:pl-1 transition-all">Campaigns</a></li>
-                  <li class="mb-4"><a href="#" class="text-dark-gray-01 no-underline text-[15px] font-medium leading-relaxed hover:text-orange-primary hover:pl-1 transition-all">Branding</a></li>
-              </ul>
-          </div>
-
-          <div class="footer-section w-[133px]">
-              <h3 class="text-orange-primary-1 text-[17px] mb-5 font-dmsans  relative">Furniture</h3>
-              <ul class="list-none p-0 w-33 opacity-80">
-                  <li class="mb-4"><a href="#" class="text-dark-gray-01 no-underline text-[15px] font-medium leading-relaxed hover:text-orange-primary hover:pl-1 transition-all">Beds</a></li>
-                  <li class="mb-4"><a href="#" class="text-dark-gray-01 no-underline text-[15px] font-medium leading-relaxed hover:text-orange-primary hover:pl-1 transition-all">Chair</a></li>
-                  <li class="mb-4"><a href="#" class="text-dark-gray-01 no-underline text-[15px] font-medium leading-relaxed hover:text-orange-primary hover:pl-1 transition-all">All</a></li>
-              </ul>
-          </div>
-
-          <div class="footer-section w-[133px]">
-              <h3 class="text-orange-primary-1 text-[17px] mb-5 font-dmsans  relative">Follow Us</h3>
-              <div class="social-links flex gap-2 items-start ">
-                  <div class="space-y-4">
-                      <button class="flex items-self-start gap-2 " >
-                          <div class="w-5 h-5 justify-items-center"><img src="./img/Facebook.svg" alt="" class="items-center text-center justify-items-center"></div>
-                          <a href="#" class="text-dark-gray-01 no-underline text-[15px] font-medium leading-relaxed hover:text-orange-primary transition-colors opacity-80">Facebook</a>
-                      </button>
-                      <button class="flex items-self-start gap-2">
-                          <div class="w-5 h-5 justify-items-center"><img src="./img/Twitter.svg" alt="" class="items-center text-center justify-items-center"></div>
-                          <a href="#" class="text-dark-gray-01 no-underline text-[15px] font-medium leading-relaxed hover:text-orange-primary transition-colors opacity-80">Twitter</a>
-                      </button>
-                      <button class="flex items-self-start gap-2">
-                          <div class="w-5 h-5 justify-items-center"><img src="./img/Instagram.svg" alt="" class="items-center text-center justify-items-center"></div>
-                          <a href="#" class="text-dark-gray-01 no-underline text-[15px] font-medium leading-relaxed hover:text-orange-primary transition-colors opacity-80">Instagram</a>
+            </div>
+             
+        </section>                    
+            
+    </div>
+    <!-- Footer -->
+  <footer class="footer">
+            <div class="footer-content">
+                <!-- Main Footer Content -->
+               <div class="footer-container"> 
+                
+                    <h2 class="logo">Panto</h2>
+                    <p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities. </p>
+                </div>
+        
+             <div class="footer-sections">
+                 <div class="footer-section">
+                    <h3>Services</h3>
+                   <ul>
+                        <li><a href="#">Email Marketing</a></li>
+                        <li><a href="#">Campaigns</a></li>
+                        <li><a href="#">Branding</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Furniture </h3>
+                    <ul>
+                        <li><a href="#">Beds</a></li>
+                        <li><a href="#">Chair</a></li>
+                        <li><a href="#">All</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                      <div class="soctial-img"> 
+                     <button class="social-img-content">
+                      <div class="img-social"><img src="./img/Facebook.svg" alt="" style="width: 19.56px; height: 19.56px; margin-bottom: 21.11px;"></div>
+                       <a href="#" class="social-link">Facebook</a>
+                     </button>
+                      <button class="social-img-content"> <div class="img-social"><img src="./img/Twitter.svg" alt="" style="width: 19.56px; height: 15.89px; margin-bottom: 21.11px;"></div>
+                      <a href="#" class="social-link">Twitter</a></button>
+                      <button class="social-img-content ">
+                       <div class="img-social">
+                         <img src="./img/Instagram.svg" alt="" style="width: 20px; height: 20px;">
+                       </div>
+                       <a href="#" class="social-link">Instagram</a>
                       </button>
                   </div>
               </div>
@@ -852,7 +874,7 @@
         {
             breakpoint: 1300,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 3,
           
             }
           },
@@ -888,12 +910,19 @@
             breakpoint: 950,
             settings: {
               slidesToShow: 2,
-              dots: true,
             
             
             }
           },
-       
+           {
+            breakpoint: 860,
+            settings: {
+              slidesToShow: 1,
+              dots: true,
+              arrows: false,
+               
+            }
+           },
           {
             breakpoint: 768,
             settings: {
@@ -948,21 +977,17 @@
              dots: true,
              arrows: false,
           }
-        },       
-        {
+        },
+            {
           breakpoint: 850,
           settings: {
             slidesToShow: 1,
             dots: true,
-            arrows: false,
            
            
 
           }
         },
-        
-
-          
     
          {
           breakpoint: 680,
